@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist</title>
+</head>
+<body>
+    <h1>Spotify Playlist</h1>
+    <!-- Representacion del top de la lista - Region latina -->
+    <ul id="playlist">
+        <li class="song">Tu Boda - Fuerza Regida</li>
+        <li class="song">Despues de la 1 - Cris MJ </li>
+        <li class="song">NEL - Fuerza Regida</li>
+    </ul>
+    <!-- Creacion de un boton para realizar la accion de actualizar -->
+    <button onclick="changeSongTitle()">Cambiar título de la primera canción</button>
+
+    <script>
+        function changeSongTitle() {
+            // Cambiar el título de la primera canción a una mas reciente 
+            const firstSong = document.querySelector('.song');
+            firstSong.textContent = 'Piensalo - Junior-H (Remix)';
+            console.log("Puesto actualizado: " + firstSong.textContent);
+        }
+    </script>
+</body>
+</html>

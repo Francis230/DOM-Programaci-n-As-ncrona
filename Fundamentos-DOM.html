@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist</title>
+</head>
+<body>
+    <!-- Representacion de la lista de cacniones de un album  -->
+    <h1>Radio Verde 70</h1>
+    <table id="playlist">
+        <tr>
+            <td>17</td>
+            <td class="title">Mi Corazón No Entiende</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td class="title">Soltero</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td class="title">Que Difícil Es Amar</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td class="title">Basta Con Que Estés</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td class="title">Tanto Ganas Tanto Pierdes</td>
+        </tr>
+    </table>
+
+    <script>
+        // Acceder a todos los títulos de las canciones con el script como el "foreach"
+        const songs = document.querySelectorAll('.title');
+        songs.forEach((song, index) => {
+            console.log(`Canción ${index + 1}: ${song.textContent}`);
+        });
+    </script>
+    
+</body>
+</html>
